@@ -84,7 +84,7 @@ class ImageAnnotationApp:
 
         # Отображаем масштабированное изображение
         self.tk_image = ImageTk.PhotoImage(image)
-        self.panel.config(image=self.tk_image)
+        self.panel.configure(image=self.tk_image)
         self.panel.image = self.tk_image
 
     def start_drawing_quadrilateral(self):
