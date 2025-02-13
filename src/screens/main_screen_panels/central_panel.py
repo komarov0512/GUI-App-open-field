@@ -13,8 +13,8 @@ class CentralPanel(tk.Frame):
     def _create_widgets(self):
         """Создает элементы центральной панели"""
         self.config(bg="white")
-        self.btn_load = tk.Button(self, text="Загрузить файл",command=self._open_image, width=50, height=3)
-        self.btn_load.place(relx=0.5, rely=0.5, anchor="center")
+        self.btn_load = tk.Button(self, text="Загрузить файл", command=self._open_image)
+        self.btn_load.pack(expand=True, padx=20, pady=20)
 
     def _open_image(self):
         file_path = file_load()
